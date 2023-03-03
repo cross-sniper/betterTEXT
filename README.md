@@ -2,7 +2,7 @@
 # betterTEXT
 
 betterTEXT is a Python module created by cross-sans and chatGPT that provides some enhanced text-related functionalities.
-download: https://github.com/cross-sans/betterTEXT/blob/experiment/betterTEXT.zip
+download <a href="https://github.com/cross-sans/betterTEXT/blob/experiment/betterTEXT.zip">here</a>
 It includes the following functions:
 
 ## `color_text(text, color)`
