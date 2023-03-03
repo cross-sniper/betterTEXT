@@ -61,7 +61,7 @@ Returns a string with each character in a different color.
 ### Parameters:
 
 - text (str): The text to color.
-- color (str, optional): The color to use for the text. Must be one of the supported colors by the termcolor package (e.g., 'red', 'green', 'yellow', 'blue', etc.). Default is None.
+- color (array, optional): The color to use for the text. Must be one of the supported colors by the termcolor package (e.g., 'red', 'green', 'yellow', 'blue', etc.). Default is None.
 ### Returns:
 - A string with each character in a different color.
 
@@ -71,7 +71,7 @@ Prompts the user for input with each character in a different color.
 
 ### Parameters:
 - prompt (str): The prompt to display to the user.
-- color (str, optional): The color to use for the prompt. Must be one of the supported colors by the termcolor package (e.g., 'red', 'green', 'yellow', 'blue', etc.). Default is None.
+- color (array, optional): The color to use for the prompt. Must be one of the supported colors by the termcolor package (e.g., 'red', 'green', 'yellow', 'blue', etc.). Default is None.
 
 ### Returns:
 - The user input value.
@@ -100,9 +100,9 @@ betterTEXT.println(f"Hello, {name}!", "blue")
 betterTEXT.search_online("Python documentation")
 
 # Multicolor text
-print(betterTEXT.multicolor_text("Multicolor text!", "magenta"))
+print(betterTEXT.multicolor_text("Multicolor text!", ["magenta"]))
 
 # Multicolor input
-answer = betterTEXT.multicolor_input("Type something here: ", "yellow")
+answer = betterTEXT.multicolor_input("Type something here: ", ["yellow"])
 print(f"You typed: {answer}")
 ```
