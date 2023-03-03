@@ -22,6 +22,16 @@ def request(prompt, color=None):
     if color:
         prompt = colored(prompt, color)
     return input(prompt)
+def multicolor_text(text, colors=None):
+    if colors:
+        for color in colors:
+            text = colored(text, color)
+    return text
+
+def multicolor_input(prompt, colors=None):
+    if colors:
+        prompt = multicolor_text(prompt, colors)
+    return input(prompt)
 
 def search_online(query):
     """

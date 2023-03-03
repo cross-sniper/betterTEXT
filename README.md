@@ -54,6 +54,29 @@ Searches for the specified query online using the default web browser.
 
 - None.
 
+## `multicolor_text(text, color=None)`
+
+Returns a string with each character in a different color.
+
+### Parameters:
+
+- text (str): The text to color.
+- color (str, optional): The color to use for the text. Must be one of the supported colors by the termcolor package (e.g., 'red', 'green', 'yellow', 'blue', etc.). Default is None.
+### Returns:
+- A string with each character in a different color.
+
+## `multicolor_input(prompt, color=None)`
+
+Prompts the user for input with each character in a different color.
+
+### Parameters:
+- prompt (str): The prompt to display to the user.
+- color (str, optional): The color to use for the prompt. Must be one of the supported colors by the termcolor package (e.g., 'red', 'green', 'yellow', 'blue', etc.). Default is None.
+
+### Returns:
+- The user input value.
+
+
 To use the `betterTEXT` module, you need to import it into your Python scripts:
 
 ```python
@@ -75,10 +98,11 @@ betterTEXT.println(f"Hello, {name}!", "blue")
 
 # Online search
 betterTEXT.search_online("Python documentation")
-```
 
-Note that for the `color_text()` function to work, you'll need to install the `termcolor` package using pip:
+# Multicolor text
+print(betterTEXT.multicolor_text("Multicolor text!", "magenta"))
 
-```
-pip install termcolor
+# Multicolor input
+answer = betterTEXT.multicolor_input("Type something here: ", "yellow")
+print(f"You typed: {answer}")
 ```
