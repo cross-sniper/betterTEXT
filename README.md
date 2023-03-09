@@ -1,7 +1,7 @@
 
 # betterTEXT
 
-betterTEXT is a Python module created by cross-sans and chatGPT that provides some enhanced text-related functionalities.
+betterTEXT is a Python module part of data-finder, created by cross-sans and chatGPT that provides some enhanced text-related functionalities.
 download <a href="https://github.com/cross-sans/betterTEXT/blob/experiment/betterTEXT.zip">here</a>
 It includes the following functions:
 
