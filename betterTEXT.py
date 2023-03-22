@@ -1,3 +1,4 @@
+__version__ = "betterTEXT v1"
 from termcolor import colored
 import webbrowser
 
