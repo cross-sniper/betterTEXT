@@ -23,16 +23,28 @@ def request(prompt, color=None):
     if color:
         prompt = colored(prompt, color)
     return input(prompt)
+
+
 def multicolor_text(text, colors=None):
+    """
+    Returns the specified text with different colors.
+    """
     if colors:
-        for color in colors:
-            text = colored(text, color)
-    return text
+        parts = text.split(" ")
+        colored_parts = [colored(part, colors[i % len(colors)]) for i, part in enumerate(parts)]
+        return " ".join(colored_parts)
+    else:
+        return text
 
 def multicolor_input(prompt, colors=None):
+    """
+    Prompts the user for input with the specified prompt and colors.
+    """
     if colors:
         prompt = multicolor_text(prompt, colors)
     return input(prompt)
+
+
 
 def search_online(query):
     """
